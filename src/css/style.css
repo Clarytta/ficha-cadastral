@@ -1,0 +1,231 @@
+:root {
+    --tag-color: #70f15f;
+    --top-and-bottom: #cfcfcf;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e6e6e6;
+}
+
+.title {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--top-and-bottom);
+}
+
+.title h1 {
+    letter-spacing: .4px;
+    font-size: 1.4em;
+}
+
+form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset {
+    margin-top: 30px;
+    padding: 30px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+
+    background-color: #cfebbf;
+    border: 1px solid #f3f3f3;
+    box-shadow: 0px 0px 6px rgb(0, 0, 0, 0.2);
+}
+
+legend {
+    padding: 12px;
+    font-size: 1.2em;
+    background-color: var(--tag-color);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    font-size: 1.04em;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+
+    transition: background-color .3s ease;
+}
+
+select {
+    font-size: 1.04em;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+
+    transition: background-color .3s ease;
+}
+
+label {
+    font-weight: bold;
+    color: #364b37;
+    letter-spacing: .6px;
+}
+
+input:hover,
+input:focus,
+select:hover,
+select:focus {
+    background-color: #e9fae9;
+}
+
+#name,
+#tel,
+#cpf,
+#gender {
+    width: 160px;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#lastname,
+#email,
+#maritalstatus {
+    width: 250px;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#date {
+    width: 250px;
+    padding: 8px;
+    margin-top: 4px;
+}
+
+#street-address {
+    width: 430px;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#city,
+#state,
+#district,
+#address-line {
+    width: 205px;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.send {
+    width: 600px;
+    display: flex;
+    justify-content: end;
+    padding-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.send input {
+    width: 205px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    background-color: var(--tag-color);
+    cursor: pointer;
+
+    padding: 9px;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--top-and-bottom);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h2 {
+    font-size: .7em;
+    font-style: italic;
+    font-weight: normal;
+}
+
+footer img {
+    width: 50px;
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+footer img:hover {
+    transform: scale(1.08);
+}
+
+.github {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.github h2 {
+    font-weight: bold;
+}
+
+.github a {
+    color: #000;
+}
+
+@media (max-width: 600px) {
+    fieldset {
+        max-width: 320px;
+    }
+
+    #name,
+    #tel,
+    #cpf,
+    #gender {
+        width: 250px;
+        padding: 8px;
+        margin-top: 5px;
+    }
+
+    #street-address {
+        width: 250px;
+        padding: 8px;
+        margin-top: 5px;
+    }
+
+    #city,
+    #state,
+    #district,
+    #address-line {
+        width: 250px;
+        padding: 8px;
+        margin-top: 5px;
+    }
+
+    .send {
+        max-width: 320px;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .send input {
+        width: 100%;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Cadastral</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>Ficha Cadastral</h1>
+    </div>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu Nome" minlength="3" autofocus autocomplete="off"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastname">Sobrenome</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Digite seu Sobrenome" minlength="3" autocomplete="off"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="exemplo@mail.com" autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tel">Telefone</label>
+                <input type="tel" name="tel" id="tel" placeholder="(xx)9 xxxx-xxxx" autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" minlength="14" maxlength="14" placeholder="000.000.000-00" autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Data de Nascimento</label>
+                <input type="date" name="date" id="date" min="1890-01-01" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Sexo</label>
+                <select name="gender" id="gender" required>
+                    <option value="" selected disabled>Selecionar</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                    <option value="NA">Outro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="maritalstatus">Estado Civil</label>
+                <select name="maritalstatus" id="maritalstatus" required>
+                    <option value="" selected disabled>Selecionar</option>
+                    <option value="M">Solteiro(a)</option>
+                    <option value="F">Casado(a)</option>
+                    <option value="NA">União Estável</option>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            <div class="form-group">
+                <label for="state">Estado</label>
+                <select name="state" id="state" required>
+                    <option value="" selected disabled>Selecionar</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="city">Município</label>
+                <input type="text" name="city" id="city" placeholder="Nome do Município" autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <label for="street-address">Logradouro</label>
+                <input type="text" name="street-address" id="street-address" placeholder="Nome da Rua"
+                    autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <label for="district">Bairro</label>
+                <input type="text" name="district" id="district" placeholder="Nome do Bairro" autocomplete="off"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="address-line">Complemento</label>
+                <input type="text" name="address-line" id="address-line" placeholder="ex: Bloco A, Ap. 456"
+                    autocomplete="off" required>
+            </div>
+        </fieldset>
+        <div class="send">
+            <input type="submit" name="send" value="Enviar">
+        </div>
+    </form>
+
+    <footer>
+        <div>
+            <h2>Feito por Clarisse Almeida</h2>
+        </div>
+        <div class="github">
+            <a href="https://github.com/Clarytta" target="_blank"><h2>GitHub</h2></a>
+            <a href="https://github.com/Clarytta" target="_blank"><img src="./src/images/github.png" alt="" title="GitHub"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
